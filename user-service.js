@@ -1,7 +1,8 @@
+require('dotenv').config()
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
-let mongoDBConnectionString = process.env.MONGO_URL;
+let mongoDBConnectionString = process.env.MONGODB_URI;
 
 let Schema = mongoose.Schema;
 
